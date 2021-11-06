@@ -9,7 +9,7 @@ int main()
 
 void reverse(char s[])
 {
-    if (*s == '\0')
+    if (!*s)
         return;
     reverse(s+1);
     putchar(*s);
